@@ -1,0 +1,87 @@
+/* Basic Reset and Body Styles */
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f9;
+  color: #999a8f;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: #999a8f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 1200px;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+/* Search Container Styles */
+.search-container {
+  margin-bottom: 2rem;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Results Container Styles */
+#resultsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Product Card Styles */
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Limit game card images to max 220px width */
+.product-card img {
+  max-width: 220px;
+}
+
+/* Pagination Styles */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pagination-controls button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-controls button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
